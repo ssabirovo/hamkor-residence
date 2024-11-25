@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import "_themes";
+@import "_header";
+@import "_advantages";
+@import "_consult";
+@import "_contacts";
+@import "_plans";
+
+body,
+body * {
+  font-family: "Figtree", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  section {
+    padding: 0 10%;
+  }
+}
+@media (max-width: 1200px) {
+  section {
+    padding: 0 120px;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    padding: 0rem 0.8rem;
+  }
+}

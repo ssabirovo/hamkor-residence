@@ -1,0 +1,27 @@
+.advantages {
+  width: 1200px;
+  padding: 100px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &_row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+      color: #0b1e44;
+      width: 100%;
+    }
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  }
+}
