@@ -134,6 +134,11 @@
   justify-content: space-between;
   align-items: stretch;
 }
+@media (max-width: 900px) {
+  .advantages_row {
+    justify-content: center;
+  }
+}
 .advantages_row div {
   display: flex;
   flex-direction: column;
