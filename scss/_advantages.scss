@@ -10,9 +10,7 @@
     gap: 20px;
     justify-content: space-between;
     align-items: stretch;
-    @media (max-width: 900px) {
-      justify-content: center;
-    }
+
     div {
       display: flex;
       flex-direction: column;
@@ -27,6 +25,7 @@
     @media (max-width: 900px) {
       flex-wrap: wrap;
       padding: 0 20px;
+      justify-content: center;
     }
   }
 }

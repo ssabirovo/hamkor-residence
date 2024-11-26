@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 .phoneLink {
   color: white;
-  background-color: rgb(0, 168, 0);
+  background-color: #04b804;
   border-radius: 10px;
   font-size: 30px;
   width: 60px;
@@ -14,8 +14,24 @@
   z-index: 10;
   bottom: 30px;
   right: 30px;
+  outline: 0px solid transparent;
+  transition: 0.4s linear ease-in;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes example {
+  0% {
+    outline: 0px solid transparent;
+  }
+  50% {
+    outline: 10px solid #86e086;
+  }
+  100% {
+    outline: 0px solid transparent;
+  }
+}
 .customNavbar {
   width: 1200px;
   padding: 24px 0px;
@@ -134,11 +150,6 @@
   justify-content: space-between;
   align-items: stretch;
 }
-@media (max-width: 900px) {
-  .advantages_row {
-    justify-content: center;
-  }
-}
 .advantages_row div {
   display: flex;
   flex-direction: column;
@@ -154,6 +165,7 @@
   .advantages_row {
     flex-wrap: wrap;
     padding: 0 20px;
+    justify-content: center;
   }
 }
 
@@ -243,6 +255,7 @@
 }
 .contacts a {
   text-decoration: none;
+  width: 100%;
 }
 .contacts * {
   margin: 0;
